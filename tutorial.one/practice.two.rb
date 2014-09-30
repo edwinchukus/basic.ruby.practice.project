@@ -1,2 +1,0 @@
-calling.talk
-calling.smile
