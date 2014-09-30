@@ -12,13 +12,10 @@ class Testing
    
   def smile
      if @count > 0
-        5.times do 
+        3.times do 
           puts @count
           y = @count * @count 
           puts y
-              
-        #1.upto(5)  do
-        #|@count| puts @count
        end
      end
    end 
@@ -26,5 +23,6 @@ class Testing
 end
 
 calling = Testing.new
+
 calling.talk
 calling.smile
