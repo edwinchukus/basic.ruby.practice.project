@@ -1,30 +1,18 @@
-class Travel
-  puts "Enter your city name here!"
-  playing = (gets.chomp).to_str
-  #@playing = playing
-  def outbound_journey(name, location)
-    @name = name
-    @location = location
-    puts "My name is #{name} and I am travelling to #{location}" 
+class Fruits
+  def apple(*name)
+    @fruitname = *name
+    puts @fruitname
+    
   end
   
-  def inbound_journey(name, location)
-    #@name = name
-    #@location = location
-    puts "My name is #{name} and I will be returning from #{location}" 
-    puts @name 
-    self.staying_at_home(@playing)
+  def manges(*location)
+    puts @fruitname
+    self.apple(@fruitname)
+    @country_of_origin = *location
+    puts @country_of_origin
   end
-  
-  def staying_at_home(playing)
-    @playing = playing
-    puts "I would be at home playing #{@playing}"
-  end
-  
-  
 end
 
-calling = Travel.new
-calling.outbound_journey("Edwin Nwofor", "London")
-calling.inbound_journey("Ijeoma Nwofor", "Amsterdern")
-
+calling = Fruits.new
+calling.apple("Red Apple", "Green Apple", "Pink Lady")
+calling.manges("Nigeria", "United Kingdom", "Israel")
