@@ -1,34 +1,4 @@
-class Testing
-  
-  def talk
-  puts "Enter Your number here!"
-  @count = (gets.chomp).to_i
-   if @count >= 0
-    @count += 1
-    puts @count
-  else
-    puts "You should check out the number properly!"
-  end
-   
-  def smile
-     if @count > 0
-        3.times do 
-          puts @count
-          y = @count * @count 
-          puts y
-       end
-     end
-   end 
-  end 
-end
-
-calling = Testing.new
-
-calling.talk
-calling.smile
-
-
-
+# Making basic classes and method
 
 class Culture
 def educating(name = "Edwin")
@@ -40,7 +10,7 @@ end
 calling = Culture.new
 calling.educating
 
-
+#1. Class/Method meant to learn Instance variable
 
 class Boogeyman
 
@@ -68,7 +38,7 @@ calling.get_info
 
 
 
-
+#2. Class/Method meant to learn Instance variable
 
 class Travel
   puts "Enter your city name here!"
@@ -101,11 +71,39 @@ calling.outbound_journey("Edwin Nwofor", "London")
 calling.inbound_journey("Ijeoma Nwofor", "Amsterdern")
 
 
+#Using class/method to learn computation
+class Testing
+  
+  def talk
+  puts "Enter Your number here!"
+  @count = (gets.chomp).to_i
+   if @count >= 0
+    @count += 1
+    puts @count
+  else
+    puts "You should check out the number properly!"
+  end
+   
+  def smile
+     if @count > 0
+        3.times do 
+          puts @count
+          y = @count * @count 
+          puts y
+       end
+     end
+   end 
+  end 
+end
+
+calling = Testing.new
+
+calling.talk
+calling.smile
 
 
 
-
-
+#Using class and Method to make endless loop
 class Fruits
   def apple(*name)
     @fruitname = *name
@@ -128,3 +126,13 @@ end
 calling = Fruits.new
 calling.apple("Red Apple", "Green Apple", "Pink Lady")
 calling.mangoes("Nigeria", "United Kingdom", "Israel")
+
+
+
+#Learning Time Parser using Chronic gem
+
+require 'chronic'
+
+puts Chronic.parse('this friday 5:00')
+puts Chronic.parse('next thursday') 
+
