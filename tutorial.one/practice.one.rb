@@ -40,3 +40,28 @@ end
 calling = Culture.new
 calling.educating
 
+
+
+class Boogeyman
+
+def change_location(newlocation)
+@location = newlocation
+puts "I moved to #{newlocation}!"
+self.get_info
+end
+
+def change_name(newname)
+@name = newname
+puts "I shall be called #{newname} from now on!"
+self.get_info
+end
+
+def get_info
+puts "I am #{@name} in #{@location}."
+end
+end
+
+calling = Boogeyman.new
+calling.change_location("Edinburgh")
+calling.change_name("Software Test Analyst")
+calling.get_info
