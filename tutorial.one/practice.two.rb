@@ -1,6 +1,6 @@
 class Travel
   puts "Enter your city name here!"
-  playing = (gets).to_str
+  playing = (gets.chomp).to_str
   #@playing = playing
   def outbound_journey(name, location)
     @name = name
