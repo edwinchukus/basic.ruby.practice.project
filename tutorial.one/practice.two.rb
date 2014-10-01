@@ -1,11 +1,18 @@
-
-class Culture
-def educating(name = "Edwin")
-  puts "My name is "+ name
-  puts "My intent is to be educated in Ruby language!"
+class Login_page
+  
+  def initialize
+    @browser.button(:id => 'click').set
+    @browser.send_key return
+    
+  end
+  
+  
+  def supplying_the_credentials
+    
+  end
+  
+  def clicking
+    
+    
+  end
 end
-end
-
-calling = Culture.new
-calling.educating
-
