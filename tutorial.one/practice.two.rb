@@ -14,9 +14,6 @@ class Box
       @height
    end
    
-   def area_of_the_rectangle
-     Area = @width * @height
-   end
    
    # setter methods
    def setWidth=(value)
@@ -26,6 +23,11 @@ class Box
    def setHeight=(value)
       @height = value
    end
+   
+   def area_of_the_rectangle()
+     Area = (@width * @height) 
+   end
+   
 end
 
 # create an object
